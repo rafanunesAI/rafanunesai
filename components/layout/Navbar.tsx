@@ -8,11 +8,11 @@ export const Navbar: React.FC = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/sobre" },
-    { name: "Courses", href: "/cursos" },
-    { name: "Shop", href: "/loja" },
-    { name: "Contact", href: "/contato" },
+    { name: "Início", href: "/" },
+    { name: "Sobre", href: "/sobre" },
+    { name: "Cursos", href: "/cursos" },
+    { name: "Loja", href: "/loja" },
+    { name: "Contato", href: "/contato" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,11 +23,6 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo & Brand */}
           <Link to="/" className="flex-shrink-0 group flex items-center gap-3">
-            {/* 
-               LOGO GFT - TROQUE AQUI:
-               1. Suba o logo (preferencialmente PNG transparente) no imgur.com
-               2. Cole o link abaixo no lugar do link atual.
-            */}
             <img 
               src="https://i.imgur.com/h0UB5K0.jpeg" 
               alt="GFT Logo" 

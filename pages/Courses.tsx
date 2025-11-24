@@ -5,32 +5,29 @@ import { CheckCircle } from "lucide-react";
 const courses = [
   {
     id: 1,
-    title: "White Belt Fundamentals",
-    description: "Everything you need to know to survive and evolve in your first months on the mats.",
+    title: "Fundamentos da Faixa Branca",
+    description: "Tudo o que você precisa saber para sobreviver e evoluir nos seus primeiros meses de tatame.",
     price: "$ 69.00",
-    // TROQUE A FOTO DO CURSO 1 AQUI NO 'image':
     image: "https://i.imgur.com/gErgXeS.png",
-    features: ["Basic Defenses", "Hip Escapes", "Mat Etiquette"],
+    features: ["Defesas Básicas", "Fugas de Quadril", "Etiqueta no Tatame"],
     position: "object-[center_20%]" // Adjusted to frame face better
   },
   {
     id: 2,
-    title: "Indestructible Guard Passing",
-    description: "My personal methodology to pass any guard, using pressure and precise technique.",
+    title: "Passagem de Guarda Indestrutível",
+    description: "Minha metodologia pessoal para passar qualquer guarda, usando pressão e técnica precisa.",
     price: "$ 99.00",
-    // TROQUE A FOTO DO CURSO 2 AQUI NO 'image':
     image: "https://i.imgur.com/nmTTyO1.png",
-    features: ["Constant Pressure", "Hook Annulment", "Passing Submissions"],
+    features: ["Pressão Constante", "Anulação de Ganchos", "Finalizações na Passagem"],
     position: "object-[center_20%]" // Adjusted to frame face better
   },
   {
     id: 3,
-    title: "Complete Self-Defense",
-    description: "The original Jiu-Jitsu. Learn to defend yourself in real street situations.",
+    title: "Defesa Pessoal Completa",
+    description: "O Jiu-Jitsu original. Aprenda a se defender em situações reais de rua.",
     price: "$ 49.00",
-    // TROQUE A FOTO DO CURSO 3 AQUI NO 'image':
     image: "https://i.imgur.com/cONtvma.png",
-    features: ["Headlock Escape", "Punch Defense", "Ground Control"],
+    features: ["Saída de Gravata", "Defesa contra Socos", "Controle no Solo"],
     position: "object-[center_20%]" // Adjusted to frame face better
   }
 ];
@@ -39,8 +36,8 @@ export const Courses: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
       <div className="bg-brand-red py-16 text-center text-white shadow-md">
-        <h1 className="text-4xl font-heading font-bold uppercase">Online Courses</h1>
-        <p className="mt-2 opacity-90 max-w-2xl mx-auto px-4">Take Professor Deivid Dias's knowledge wherever you go. Lifetime access and certificate of completion.</p>
+        <h1 className="text-4xl font-heading font-bold uppercase">Cursos Online</h1>
+        <p className="mt-2 opacity-90 max-w-2xl mx-auto px-4">Leve o conhecimento do Professor Deivid Dias para onde você for. Acesso vitalício e certificado de conclusão.</p>
       </div>
 
       <div className="container mx-auto px-4 -mt-10">
@@ -70,7 +67,7 @@ export const Courses: React.FC = () => {
 
                 <div className="mt-auto pt-4 border-t border-gray-100">
                   <span className="block text-2xl font-bold text-brand-black mb-3">{course.price}</span>
-                  <Button className="w-full justify-center">Buy Now</Button>
+                  <Button className="w-full justify-center">Comprar Agora</Button>
                 </div>
               </div>
             </div>

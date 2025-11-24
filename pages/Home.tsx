@@ -10,14 +10,6 @@ export const Home: React.FC = () => {
       <section className="relative h-[90vh] flex items-center justify-center bg-brand-black overflow-hidden">
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0">
-          {/* 
-            COMO COLOCAR SUA PRÓPRIA FOTO:
-            1. Como o site roda no navegador, ele não acessa seu disco C:.
-            2. Hospede sua foto no https://imgur.com/ ou outro site.
-            3. Cole o link da imagem (deve terminar em .jpg ou .png) no 'src' abaixo.
-            
-            Exemplo atual: Imagem de Jiu-Jitsu do Unsplash.
-          */}
           <img
             src="https://i.imgur.com/Uk5hVMv.jpeg"
             alt="Professor Deivid Dias Jiu-Jitsu"
@@ -35,20 +27,20 @@ export const Home: React.FC = () => {
             <span className="w-8 h-[2px] bg-brand-red inline-block"></span>
           </h2>
           <h1 className="text-white font-heading font-black text-5xl md:text-7xl mb-6 leading-tight drop-shadow-2xl">
-            JIU-JITSU TO <br />
+            JIU-JITSU PARA <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-              TRANSFORM LIVES
+              TRANSFORMAR VIDAS
             </span>
           </h1>
           <p className="text-gray-100 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light drop-shadow-lg">
-            Technique, discipline, and respect. Learn the gentle art with the Grappling Fight Team methodology.
+            Técnica, disciplina e respeito. Aprenda a arte suave com a metodologia Grappling Fight Team.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link to="/cursos">
-              <Button variant="primary">View Online Courses</Button>
+              <Button variant="primary">Ver Cursos Online</Button>
             </Link>
             <Link to="/contato">
-              <Button variant="outline">Book a Trial Class</Button>
+              <Button variant="outline">Agendar Aula Experimental</Button>
             </Link>
           </div>
         </div>
@@ -59,18 +51,18 @@ export const Home: React.FC = () => {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
           <div className="flex flex-col items-center p-6 hover:bg-white/5 transition-colors rounded-lg">
             <Medal className="text-brand-red w-12 h-12 mb-4" />
-            <h3 className="font-heading font-bold text-xl">GFTEAM Black Belt</h3>
-            <p className="text-gray-400 text-sm mt-2">Certified by one of the biggest teams in the world.</p>
+            <h3 className="font-heading font-bold text-xl">Faixa Preta GFTEAM</h3>
+            <p className="text-gray-400 text-sm mt-2">Certificado por uma das maiores equipes do mundo.</p>
           </div>
           <div className="flex flex-col items-center p-6 border-t md:border-t-0 md:border-l border-white/10 hover:bg-white/5 transition-colors rounded-lg">
             <Users className="text-brand-red w-12 h-12 mb-4" />
-            <h3 className="font-heading font-bold text-xl">+100 Students</h3>
-            <p className="text-gray-400 text-sm mt-2">Lives transformed through the sport.</p>
+            <h3 className="font-heading font-bold text-xl">+100 Alunos</h3>
+            <p className="text-gray-400 text-sm mt-2">Vidas transformadas através do esporte.</p>
           </div>
           <div className="flex flex-col items-center p-6 border-t md:border-t-0 md:border-l border-white/10 hover:bg-white/5 transition-colors rounded-lg">
             <Star className="text-brand-red w-12 h-12 mb-4" />
-            <h3 className="font-heading font-bold text-xl">Unique Methodology</h3>
-            <p className="text-gray-400 text-sm mt-2">Calm, firm, and technical style.</p>
+            <h3 className="font-heading font-bold text-xl">Metodologia Única</h3>
+            <p className="text-gray-400 text-sm mt-2">Estilo calmo, firme e técnico.</p>
           </div>
         </div>
       </section>
@@ -80,29 +72,23 @@ export const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2 relative h-[500px] rounded-lg overflow-hidden shadow-2xl group">
-              {/* 
-                 TO CHANGE THIS PHOTO:
-                 1. Upload your photo to a site like https://imgur.com/
-                 2. Copy the direct link (ending in .jpg or .png)
-                 3. Paste it inside the src="" below, replacing the current link.
-              */}
               <img
                 src="https://i.imgur.com/aPzTKOH.png"
-                alt="Deivid Dias Teaching"
+                alt="Deivid Dias Ensinando"
                 className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-brand-red/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
             <div className="w-full md:w-1/2">
-              <h3 className="text-brand-red font-bold font-heading uppercase tracking-wider mb-2">Who am I</h3>
-              <h2 className="text-4xl font-heading font-bold text-brand-black mb-6">Much more than just fighting</h2>
+              <h3 className="text-brand-red font-bold font-heading uppercase tracking-wider mb-2">Quem sou eu</h3>
+              <h2 className="text-4xl font-heading font-bold text-brand-black mb-6">Muito mais que apenas lutar</h2>
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                Representing the GFTEAM flag in Washington D.C., my goal goes beyond creating medal champions. 
-                I create champions in life. My methodology focuses on technical evolution combined with personal development.
+                Representando a bandeira GFTEAM em Washington D.C., meu objetivo vai além de formar campeões de medalhas. 
+                Eu formo campeões na vida. Minha metodologia foca na evolução técnica aliada ao desenvolvimento pessoal.
               </p>
               <Link to="/sobre">
                 <Button variant="primary" className="flex items-center">
-                  Read my story <ChevronRight className="ml-2 w-4 h-4" />
+                  Conheça minha história <ChevronRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
             </div>
@@ -117,8 +103,8 @@ export const Home: React.FC = () => {
          
          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-12">
-               <h2 className="text-4xl font-heading font-bold text-brand-black mb-4">OFFICIAL PRODUCTS</h2>
-               <p className="text-gray-600">Wear our team's armor. Quality tested and approved on the mats.</p>
+               <h2 className="text-4xl font-heading font-bold text-brand-black mb-4">PRODUTOS OFICIAIS</h2>
+               <p className="text-gray-600">Vista a armadura da nossa equipe. Qualidade testada e aprovada no tatame.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -126,23 +112,20 @@ export const Home: React.FC = () => {
                {[
                  { 
                    id: 1, 
-                   name: "GFTEAM Competition Gi", 
+                   name: "Kimono de Competição GFTEAM", 
                    price: "$ 150.00", 
-                   // PASTE LINK FOR PRODUCT 1 HERE:
                    img: "https://i.imgur.com/CR5fDyv.png" 
                  },
                  { 
                    id: 2, 
-                   name: "No-Gi Team Rashguard", 
+                   name: "Rashguard No-Gi da Equipe", 
                    price: "$ 60.00", 
-                   // PASTE LINK FOR PRODUCT 2 HERE:
                    img: "https://i.imgur.com/JT47RQw.png" 
                  },
                  { 
                    id: 3, 
-                   name: "Special Belt", 
+                   name: "Faixa Especial", 
                    price: "$ 40.00", 
-                   // PASTE LINK FOR PRODUCT 3 HERE:
                    img: "https://i.imgur.com/tj7Xt8Q.png" 
                  }
                ].map((item) => (
@@ -162,7 +145,7 @@ export const Home: React.FC = () => {
             
             <div className="text-center mt-12">
                <Link to="/loja">
-                  <Button className="bg-brand-black text-white hover:bg-gray-800">Go to Shop</Button>
+                  <Button className="bg-brand-black text-white hover:bg-gray-800">Ir para a Loja</Button>
                </Link>
             </div>
          </div>

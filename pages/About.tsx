@@ -7,8 +7,8 @@ export const About: React.FC = () => {
       {/* Header */}
       <div className="bg-brand-dark py-20 text-center text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-brand-red/5"></div>
-        <h1 className="text-4xl md:text-5xl font-heading font-bold uppercase relative z-10">About David Dias</h1>
-        <p className="text-brand-red mt-4 font-medium tracking-wide relative z-10">DEIVID DIAS • GFTEAM BLACK BELT</p>
+        <h1 className="text-4xl md:text-5xl font-heading font-bold uppercase relative z-10">Sobre Deivid Dias</h1>
+        <p className="text-brand-red mt-4 font-medium tracking-wide relative z-10">DEIVID DIAS • FAIXA PRETA GFTEAM</p>
       </div>
 
       <div className="container mx-auto px-4 py-16">
@@ -18,37 +18,37 @@ export const About: React.FC = () => {
           <div className="space-y-6 text-gray-700 text-lg leading-relaxed animate-fade-in">
             <p>
               <span className="text-5xl float-left mr-3 mt-[-8px] font-heading font-bold text-brand-red">D</span>
-              avid Dias is a Brazilian Jiu-Jitsu black belt and a proud member of the GFTEAM Hall of Fame. With years of experience on the mats and a career dedicated to developing athletes, he serves as Head Coach at GFTEAM DC and Hyattsville BJJ, where he trains students with precision, discipline, and deep respect for the roots of the sport.
+              eivid Dias é faixa preta de Jiu-Jitsu Brasileiro e um orgulhoso membro do Hall da Fama da GFTEAM. Com anos de experiência nos tatames e uma carreira dedicada ao desenvolvimento de atletas, ele atua como Head Coach na GFTEAM DC e Hyattsville BJJ, onde treina alunos com precisão, disciplina e profundo respeito pelas raízes do esporte.
             </p>
             <p>
-              Beyond his work as a coach and competitor, David is also an entrepreneur. He is the CEO of OSS Rio Tours and Nebula Kimonos, brands that reflect his commitment to elevating Jiu-Jitsu both on and off the mats.
+              Além de seu trabalho como treinador e competidor, Deivid também é empreendedor. Ele é o CEO da OSS Rio Tours e Nebula Kimonos, marcas que refletem seu compromisso em elevar o Jiu-Jitsu tanto dentro quanto fora dos tatames.
             </p>
             <p>
-              Recognized for his leadership, passion, and ability to transform lives through the gentle art, David Dias stands as a respected figure in the Jiu-Jitsu community.
+              Reconhecido por sua liderança, paixão e habilidade de transformar vidas através da arte suave, Deivid Dias se destaca como uma figura respeitada na comunidade do Jiu-Jitsu.
             </p>
             
             <div className="pt-6 border-l-4 border-brand-red pl-6 italic text-gray-500 bg-gray-50 p-4 rounded-r-lg">
-              "Physical strength can win a battle, but mental strength and technique win the war."
+              "A força física pode vencer uma batalha, mas a força mental e a técnica vencem a guerra."
             </div>
 
             <div className="pt-8">
-              <h3 className="font-heading font-bold text-xl mb-4">Timeline</h3>
+              <h3 className="font-heading font-bold text-xl mb-4">Linha do Tempo</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-brand-red rounded-full mr-4"></div>
-                  <span className="font-bold mr-2">2010:</span> Started as White Belt
+                  <span className="font-bold mr-2">2010:</span> Começou como Faixa Branca
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-brand-red rounded-full mr-4"></div>
-                  <span className="font-bold mr-2">2014:</span> Purple Belt State Champion
+                  <span className="font-bold mr-2">2014:</span> Campeão Estadual Faixa Roxa
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-brand-red rounded-full mr-4"></div>
-                  <span className="font-bold mr-2">2018:</span> Black Belt Promotion
+                  <span className="font-bold mr-2">2018:</span> Graduação Faixa Preta
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-brand-red rounded-full mr-4"></div>
-                  <span className="font-bold mr-2">2020:</span> Opening of GFTEAM DC
+                  <span className="font-bold mr-2">2020:</span> Abertura da GFTEAM DC
                 </li>
               </ul>
             </div>
@@ -58,40 +58,36 @@ export const About: React.FC = () => {
           <div className="grid grid-cols-2 gap-4">
             {/* FOTO 1 (Superior Esquerda) */}
             <div className="relative h-64 rounded-lg overflow-hidden translate-y-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-               {/* COLE O LINK DA SUA FOTO 1 AQUI EMBAIXO NO SRC */}
                <img 
                   src="https://i.imgur.com/FmyA3Pc.png"
-                  alt="Deivid Dias Smiling"
+                  alt="Deivid Dias Sorrindo"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                />
             </div>
 
             {/* FOTO 2 (Superior Direita) */}
             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-               {/* COLE O LINK DA SUA FOTO 2 AQUI EMBAIXO NO SRC */}
                <img 
                   src="https://i.imgur.com/4lN4yRt.png"
-                  alt="Fight Position"
+                  alt="Posição de Luta"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                />
             </div>
 
             {/* FOTO 3 (Inferior Esquerda) */}
             <div className="relative h-64 rounded-lg overflow-hidden translate-y-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
-               {/* COLE O LINK DA SUA FOTO 3 AQUI EMBAIXO NO SRC */}
                <img 
                   src="https://i.imgur.com/arK9jql.png"
-                  alt="With Students"
+                  alt="Com Alunos"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                />
             </div>
 
             {/* FOTO 4 (Inferior Direita) */}
             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-               {/* COLE O LINK DA SUA FOTO 4 AQUI EMBAIXO NO SRC */}
                <img 
                   src="https://i.imgur.com/Zb7r7vk.png"
-                  alt="Black Belt Detail"
+                  alt="Detalhe Faixa Preta"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                />
             </div>

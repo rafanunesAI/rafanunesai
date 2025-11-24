@@ -10,10 +10,6 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              {/* 
-                 LOGO GFT - TROQUE AQUI:
-                 1. Cole o mesmo link que usou na Navbar aqui.
-              */}
               <img 
                 src="https://i.imgur.com/h0UB5K0.jpeg" 
                 alt="GFT Logo" 
@@ -22,8 +18,8 @@ export const Footer: React.FC = () => {
               <h2 className="font-heading text-2xl font-bold">DEIVID<span className="text-brand-red">DIAS</span></h2>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Jiu-Jitsu isn't just a fight, it's a lifestyle. 
-              Proudly representing <strong>Grappling Fight Team (GFTEAM)</strong>. Transforming lives through discipline, technique, and respect.
+              Jiu-Jitsu não é apenas uma luta, é um estilo de vida. 
+              Representando com orgulho a <strong>Grappling Fight Team (GFTEAM)</strong>. Transformando vidas através da disciplina, técnica e respeito.
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="#" className="text-gray-400 hover:text-brand-red transition-colors"><Instagram size={24} /></a>
@@ -34,18 +30,18 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="font-heading text-lg font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
+            <h3 className="font-heading text-lg font-bold mb-4 uppercase tracking-wider">Links Rápidos</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/sobre" className="hover:text-white transition-colors">About the Professor</Link></li>
-              <li><Link to="/cursos" className="hover:text-white transition-colors">Online Courses</Link></li>
-              <li><Link to="/loja" className="hover:text-white transition-colors">Official Shop</Link></li>
-              <li><Link to="/contato" className="hover:text-white transition-colors">Book a Class</Link></li>
+              <li><Link to="/sobre" className="hover:text-white transition-colors">Sobre o Professor</Link></li>
+              <li><Link to="/cursos" className="hover:text-white transition-colors">Cursos Online</Link></li>
+              <li><Link to="/loja" className="hover:text-white transition-colors">Loja Oficial</Link></li>
+              <li><Link to="/contato" className="hover:text-white transition-colors">Agendar Aula</Link></li>
             </ul>
           </div>
 
           {/* Column 3: Contact */}
           <div>
-            <h3 className="font-heading text-lg font-bold mb-4 uppercase tracking-wider">Contact</h3>
+            <h3 className="font-heading text-lg font-bold mb-4 uppercase tracking-wider">Contato</h3>
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 text-brand-red mt-1 shrink-0" />
@@ -60,7 +56,7 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Professor Deivid Dias. Grappling Fight Team. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Professor Deivid Dias. Grappling Fight Team. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
